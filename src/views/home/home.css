@@ -1,0 +1,42 @@
+@media (min-width: 576px) {
+    .blog-item .row {
+        height: 300px;
+    }
+}
+
+.blog-item a .i {
+    position: relative;
+    padding-left: 20px;
+    transition: .3s;
+}
+
+.blog-item a:hover .i {
+    padding-left: 50px;
+}
+
+.blog-item a .i::after {
+    position: absolute;
+    content: "";
+    width: 20px;
+    height: 2px;
+    top: 50%;
+    left: 10px;
+    margin-top: -1px;
+    background: #0d6efd;
+    color: #0d6efd;
+    transition: .3s;
+}
+
+.blog-item a:hover .i::after {
+    width: 50px;
+}
+
+.blog-title{
+    width: 500px;
+    height: 100px;
+    display: -webkit-box !important;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}

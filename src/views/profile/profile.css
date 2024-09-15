@@ -1,0 +1,55 @@
+.profile{
+    height: 100vh;
+}
+
+.about-img {
+    position: relative;
+    height: 100%;
+    margin: 60px 0 0 60px;
+}
+.about-img::before {
+    position: absolute;
+    content: "";
+    top: -60px;
+    right: 200px;
+    bottom: 60px;
+    left: -60px;
+    background: #1d2434;
+    z-index: 0;
+}
+
+.about-img img {
+    position: relative;
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+    z-index: 1;
+}
+
+.about-img::after {
+    position: absolute;
+    content: "";
+    top: -30px;
+    right: 30px;
+    bottom: 30px;
+    left: -30px;
+    background: transparent;
+    border: 1px solid #ffffff;
+    z-index: 2;
+}
+
+.section-header {
+    position: relative;
+    max-width: 600px;
+    margin: 0 auto 45px;
+}
+.section-header h2 {
+    margin: 0;
+    position: relative;
+    font-size: 50px;
+    font-weight: 700;
+}
+
+.btn-update{
+    margin: 0 auto;
+}
